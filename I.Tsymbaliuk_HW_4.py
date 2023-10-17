@@ -1,4 +1,3 @@
-print('Завдання 1', '\n')
 a = input()
 if len(a) > 0:
     while len(a) < 15:
