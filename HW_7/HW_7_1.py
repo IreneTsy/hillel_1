@@ -1,9 +1,9 @@
-my_string = 'Python is good language to learn and in same time we like to tell that it is cool experience for us'
-my_string = my_string.lower()
-my_dct = {}
-char_2 = [*my_string]
-for i in char_2:
-    my_dct.setdefault(i, 0)
-    my_dct[i] += 1
-del my_dct[' ']
-print(my_dct)
+'''Завдання 1
+
+Дано два словники: dictionary_1 = {'a': 300, 'b': 400}
+і dictionary_2 = {'c': 500, 'd': 600}. Об'єднайте їх за допомогою вбудованих функцій мови Python.'''
+
+dictionary_1 = {'a': 300, 'b': 400}
+dictionary_2 = {'c': 500, 'd': 600}
+dictionary_1.update(dictionary_2)
+print(dictionary_1)
