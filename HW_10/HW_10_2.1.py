@@ -5,6 +5,7 @@ def create_2d_arrays(*args):
     "Ф-ція якщо параметр не введений"
     if len(args) == 0:
         print(None)
+
 "Ф-ція для одного параметру"
     elif len(args) == 1:
 """Генерація 2 вимірного списку з одним параметром, що заповнені
@@ -19,6 +20,7 @@ def create_2d_arrays(*args):
             formatted_row = [f'{val:^{max_len}}' for val in row]
 "Виведення відформатованого списку по рядкам"
             print(' '.join(formatted_row))
+
 "Ф-ція для двох параметрів"
     elif len(args) == 2:
         matrix = [
@@ -31,15 +33,6 @@ def create_2d_arrays(*args):
             formatted_row = [f'{val:^{max_len}}' for val in row]
             print(' '.join(formatted_row))
 
-
-"""2 га функція очікує один обовязковий парметр і це має бути
-2 вимірний список симетричний"""
-def create_matrix(n):
-        matrix = [ 
-          [random.randint(0, 200) for _ in range(n)]
-            for __ in range(n)
-        ]
-        max_len = max(len(str(max(row)) if row else 0) for row in matrix)
-        for row in matrix:
-            formatted_row = [f'{val:^{max_len}}' for val in row]
-            print(' '.join(formatted_row))
+print(create_2d_arrays())
+print(create_2d_arrays(5))
+print(create_2d_arrays(4, 7))
