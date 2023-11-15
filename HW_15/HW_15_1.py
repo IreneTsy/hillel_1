@@ -35,16 +35,17 @@ class ExtTriangle(TriangleChecker, Triangle):
 
 # Введемо всі значення правильно
 triang_1 = ExtTriangle(4, 4, 7)
-print(triang_1.is_triangle())
+print(triang_1.is_triangle(), ' -- Введемо всі значення правильно')
 
 # Одна зі сторін містить від'ємне значення
 triang_2 = ExtTriangle(4, -4, 7)
-print(triang_2.is_triangle())
+print(triang_2.is_triangle(), " -- Одна зі сторін містить від'ємне значення")
 
 # Одна зі сторін має тип str
 triang_3 = ExtTriangle(4, 't', 7)
-print(triang_3.is_triangle())
+print(triang_3.is_triangle(), ' -- Одна зі сторін має тип str')
 
 # Сума сторін не завжди більша за третю сторону
 triang_4 = ExtTriangle(1, 2, 3)
-print(triang_4.is_triangle())
+print(triang_4.is_triangle(), ' -- Сума сторін не завжди більша'
+                              'за третю сторону')
